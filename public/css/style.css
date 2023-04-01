@@ -60,6 +60,8 @@ h4 {
 .overview {
     margin-left: 20%;
     margin-right: 20%;
+
+    text-align: left;
     font-size: 17px;
 }
 
