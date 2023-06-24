@@ -1,2 +1,2 @@
 # CS340
-Full-stack web application for users to store books and authors information.
+Full-stack web application for users to store books and authors information, which employs an interactive website interface for seamless navigation and operations. Built with Node and Handlebars, it supports CRUD operations, allowing users to efficiently manage book records. Its underlying architecture is underpinned by a carefully designed and normalized MySQL database, ensuring optimal data organization and access.
