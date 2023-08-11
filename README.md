@@ -4,7 +4,7 @@
 This is a basic Node.js application that provides CRUD functionality for books, authors, genres, and series. The application is built with Express.js, uses Handlebars for templating, and connects to a SQL-compatible database.
 
 ## Prerequisites
-- Node.js and npm
+- Node.js
 - Express.js
 - Handlebars.js
 - SQL-compatible database
