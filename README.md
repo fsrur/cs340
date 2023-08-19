@@ -4,7 +4,7 @@
 This is a basic Node.js application that provides CRUD functionality for books, authors, genres, and series. The application is built with Express.js, uses Handlebars for templating, and connects to a SQL-compatible database.
 
 ## Prerequisites
-- Node.js and npm
+- Node.js
 - Express.js
 - Handlebars.js
 - SQL-compatible database
@@ -12,7 +12,7 @@ This is a basic Node.js application that provides CRUD functionality for books, 
 ## Installation or Setup
 1. Clone the repository.
 2. Navigate into the repository in your terminal.
-3. Install the required dependencies with <b>'npm install'</b>.
+3. Install the required dependencies with `npm install`.
 4. Set up an SQL-compatible database and adjust the <b>'./database/db-connector'</b> file to match your specific database configuration.
 
 ## Running the Application
