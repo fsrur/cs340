@@ -14,6 +14,19 @@ const port = process.env.PORT || 3000
 // Database
 const db = require('./database/db-connector')
 
+// Test the database connection
+db.pool.getConnection((err, connection) => {
+    if (err) {
+        // If an error occurred during the connection, log it and end the process
+        console.error("Error connecting to the database:", err);
+        process.exit(1); // Exit the process with a failure code
+    } else {
+        // If the connection to the database was successful, log it and release the connection
+        console.log("Successfully connected to the database.");
+        connection.release(); // Release the connection back to the pool
+    }
+});
+
 // Handlebars
 const { engine } = require('express-handlebars');
 const exphbs = require('express-handlebars');     // Import express-handlebars
