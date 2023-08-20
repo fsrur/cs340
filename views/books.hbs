@@ -37,8 +37,8 @@
             <td>{{this.InSeries}}</td>
             <td>{{this.Series}}</td>
             <td>{{this.Genre}}</td>
-            <td><button id="edit" onclick="location.href='/edit_books?book_id={{this.book_id}}'">Edit</button></td>
-            <td><button id='delete', onclick="deleteBook({{this.book_id}})">Delete</button></td>
+            <td><button class="edit" onclick="location.href='/edit_books?book_id={{this.book_id}}'">Edit</button></td>
+            <td><button class='delete', onclick="deleteBook({{this.book_id}})">Delete</button></td>
         </tr>
         {{/each}}
     </tbody>
@@ -48,4 +48,4 @@
 <script src="js/delete_book.js"></script>
 
 <!-- Button to add book -->
-<button onclick="location.href='add_books'" id="blue_button">Add Book</button> 
+<button onclick="location.href='add_books'" class="blue_button">Add Book</button> 

@@ -34,8 +34,8 @@
         <tr data_value = {{this.genre_id}}>
             <td>{{this.Name}}</td>
             <td>{{this.Description}}</td>
-            <td><button id="edit" onclick="location.href='/edit_genres?genre_id={{this.genre_id}}'">Edit</button></td>
-            <td><button id='delete', onclick="deleteGenre({{this.genre_id}})">Delete</button></td>
+            <td><button class="edit" onclick="location.href='/edit_genres?genre_id={{this.genre_id}}'">Edit</button></td>
+            <td><button class='delete', onclick="deleteGenre({{this.genre_id}})">Delete</button></td>
         </tr>
         {{/each}}
     </tbody>
@@ -45,4 +45,4 @@
 <script src="js/delete_genre.js"></script>
 
 <!-- Button to add genre -->
-<button onclick="location.href='add_genres'" id="blue_button">Add Genre</button> 
+<button onclick="location.href='add_genres'" class="blue_button">Add Genre</button> 

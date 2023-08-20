@@ -7,7 +7,6 @@ const HOST = process.env.HOST
 const USER = process.env.USER
 const PASSWORD = process.env.PASSWORD
 const DATABASE = process.env.DATABASE
-const PORT = process.env.PORT
 
 // Create a 'connection pool' using the provided credentials
 const pool = mysql.createPool({
@@ -16,7 +15,6 @@ const pool = mysql.createPool({
     user            : USER,
     password        : PASSWORD,
     database        : DATABASE,
-    port            : PORT
 })
 
 // Export it for use in our application

@@ -34,8 +34,8 @@
             <td>{{this.First_Name}}</td>
             <td>{{this.Last_Name}}</td>
             <td>{{this.Books}}</td>
-            <td><button id="edit" onclick="location.href='/edit_authors?author_id={{this.author_id}}'">Edit</button></td>
-            <td><button id='delete', onclick="deleteAuthor({{this.author_id}})">Delete</button>
+            <td><button class="edit" onclick="location.href='/edit_authors?author_id={{this.author_id}}'">Edit</button></td>
+            <td><button class='delete', onclick="deleteAuthor({{this.author_id}})">Delete</button>
         </tr>
         {{/each}}
     </tbody>
@@ -45,5 +45,5 @@
 <script src="js/delete_author.js"></script>
 
 <!-- Button to add author -->
-<button onclick="location.href='add_authors'" id="blue_button">Add Author</button> 
+<button onclick="location.href='add_authors'" class="blue_button">Add Author</button> 
 
