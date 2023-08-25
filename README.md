@@ -23,29 +23,16 @@ To start the application, run the following command in your terminal:
 This will start the server on port 3000 (or the port specified in your environment variables). If the server starts successfully, you'll see a message indicating that Express has started.
 
 ## Usage
-This application provides both a user interface (UI) for managing books, authors, genres, and series, as well as an API with CRUD operations. Here's how to use each:
-
-### User Interface
 
 The React front-end displays distinct sections or tables for books, authors, genres, and series.
 
 - **Viewing All Entities**: The main page offers tables that showcase lists of all books, authors, genres, and series.
 
-- **Adding an Entity**: For each category (e.g., books, authors), click the "Add" button, fill out the provided form with the necessary details, and click "Submit" to create a new entry.
+- **Adding an Entity**: For each category (e.g., books, authors), click the "Add" button, fill out the provided form with the necessary details, and click "Add" to create a new entry.
 
-- **Editing an Entity**: Next to each entry of an entity, click the "Edit" button. This will bring up a form filled with the current data. Make the necessary edits and click "Submit" to save changes.
+- **Editing an Entity**: Next to each entry of an entity, click the "Edit" button. This will bring up a form filled with the current data. Make the necessary changes and click "Edit" to save changes.
 
 - **Deleting an Entity**: To remove an entry, click the "Delete" button located next to the item you want to remove.
-
-### API Endpoints
-
-This application supports CRUD operations on books, authors, genres, and series through the following API endpoints:
-
-**/books, /authors, /genres, /series**: Depending on the HTTP method used, these routes allow for displaying, adding, editing, and deleting the respective entities.
-- 'GET': Retrieves all entries for the entity.
-- 'POST': Adds a new entry. Include the necessary data in the request body.
-- 'PUT': Updates a specific entry. Include the specific entity's ID in the route (e.g., /books/5 for a book with ID 5) and updated data in the request body.
-- 'DELETE': Deletes a specific entry. Include the specific entity's ID in the route (e.g., /books/5 for deleting the book with ID 5).
 
 ## Project Structure and Implementation Details
 
